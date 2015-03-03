@@ -1,18 +1,27 @@
 div {
-	width: ;
-	height: 20px;
-	border-color: black;
-	border: 1px;
+	width: 100%;
+	display: table;
+	border-radius: 2px;
+	text-align: justify;
 }
 div ul {
-	display: block;
+	display: table-row;
 	list-style-type: none;
 }
 div li {
-	display: inline-block;
-	height: 40px;
-	border-radius: 5px;
-	background-color: green;
-	color: white;
-	padding: 100%, 100%, 100%, 100%;
+	display: table-cell;
+	float: none;
+}
+div li a {
+	display: block;
+    padding: 8px 15px;
+    background: #8224d3;
+    font-family: Century;
+    font-size: 12px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+div li a:hover{
+	background: #528CBF;
 }
