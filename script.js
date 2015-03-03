@@ -3,6 +3,6 @@ $(document).ready(function() {
 		$('div').fadeTo('fast', 1)
 	});
 	$('div').mouseleave(function() {
-		$('div').fadeOut('fast', 0.5)
+		$('div').fadeTo('fast', 0.5)
 	});
 });
