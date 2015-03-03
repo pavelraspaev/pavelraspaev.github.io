@@ -1,10 +1,12 @@
 .menu {
-	height: 60px;
-	width: 200px;
 	color: white;
 	background-color: green;
 	border-radius: 5px;
 	font-family: Century;
 	opacity: 0.5;
 	text-align: center;
+}
+ul {
+	display: block;
+	list-style-type: none;
 }
