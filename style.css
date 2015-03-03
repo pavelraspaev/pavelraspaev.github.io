@@ -2,11 +2,8 @@ div ul {
 	display: block;
 	list-style-type: none;
 }
-div li{
+div li {
 	display: block;
 	height: 30px;
 	line-height: 30px;
-	font-size: 18px;
-	font-family: Century;
-	color: white;
 }
