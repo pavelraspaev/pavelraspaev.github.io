@@ -1,9 +1,17 @@
+div {
+	width: 500px;
+	height: 20px;
+}
 div ul {
 	display: block;
 	list-style-type: none;
 }
 div li {
-	display: block;
+	display: inline-block;
 	height: 30px;
 	line-height: 30px;
+	border-radius: 5px;
+	background-color: green;
+	color: white;
+	padding: 10px, 50%, 10px, 10px;
 }
