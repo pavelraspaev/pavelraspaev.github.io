@@ -1,6 +1,8 @@
 div {
 	width: ;
 	height: 20px;
+	border-color: black;
+	border: 1px;
 }
 div ul {
 	display: block;
@@ -8,7 +10,7 @@ div ul {
 }
 div li {
 	display: inline-block;
-	height: 30px;
+	height: 40px;
 	border-radius: 5px;
 	background-color: green;
 	color: white;
