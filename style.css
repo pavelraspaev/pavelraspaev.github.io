@@ -9,4 +9,9 @@
   max-width: 1000px;
   margin: 0 auto;
   padding: 0;
-  }
+}
+.logo {
+  width: 268px;
+  height: 58px;
+  background: url("img/logo.png");
+}
