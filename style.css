@@ -27,11 +27,22 @@
 .contact {
   display: inline-block;
   float: right;
+  margin: 0 auto;
 }
 
 .call {
-  display: block;
+  display: inline-block;
+  float: right;
 }
+.skype {
+  display: inline-block;
+  float: right;
+}
+.login {
+  display: inline-block;
+  float: right;
+}
+
 
 .call-ico {
   width: 37px;
