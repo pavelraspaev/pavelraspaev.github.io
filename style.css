@@ -82,6 +82,7 @@ a {
 .menu li {
     display: table-cell;
     background: #D5D6DA;
+    height: 43px;
 }
 
 .menu li:first-child {
@@ -102,4 +103,34 @@ a {
 .menu li a:hover {
     background-color: #B3C2FF;
     color: white;
+}
+
+.main-slider {
+  margin-top: 45px;
+}
+
+.powers {
+  margin-top: 20px;
+}
+
+.powers .left {
+  display: inline-block;
+  border-color: #fff;
+  width: 318px;
+  height: 484px;
+  margin: 0 20px;
+}
+.powers .center {
+  display: inline-block;
+  border-color: #fff;
+  width: 318px;
+  height: 484px;
+  margin: 0 20px;
+}
+.powers .right {
+  display: inline-block;
+  border-color: #fff;
+  width: 318px;
+  height: 484px;
+  margin: 0 20px;
 }
