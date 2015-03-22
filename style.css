@@ -144,3 +144,15 @@ p {
   width: 318px;
   height: 484px;
 }
+
+.bottom-colum {
+  display: inline-block;
+}
+
+.bot-title {
+  font: 16px Arial;
+}
+
+.bottom-links:hover {
+  color: green;
+}
