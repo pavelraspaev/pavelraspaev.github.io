@@ -147,12 +147,22 @@ p {
 
 .bottom-colum {
   display: inline-block;
+  width: 20%;
+  float: left;
+}
+
+.bottom-colum ul {
+  list-style: none;
+}
+.bottom-colum ul li {
+  margin-bottom: 15px;
 }
 
 .bot-title {
+  margin-bottom: 15px;
   font: 16px Arial;
 }
 
-.bottom-links:hover {
+.about-links:hover {
   color: green;
 }
