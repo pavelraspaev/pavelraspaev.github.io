@@ -151,6 +151,10 @@ p {
   float: left;
 }
 
+.bottom-colum p {
+  margin-bottom: 15px;
+}
+
 .bot-title {
   margin-bottom: 15px;
   font: 16px Arial;
