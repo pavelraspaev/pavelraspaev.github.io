@@ -25,7 +25,7 @@ html {
 
 .header {
   display: block;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .header a {
@@ -67,16 +67,19 @@ p {
 }
 
 .call-ico {
+  display: inline-block;
   width: 37px;
   height: 37px;
   background: url("img/head icons.png") transparent 0px 0px;
 }
 .login-ico {
+  display: inline-block;
   width: 37px;
   height: 37px;
   background: url("img/head icons.png") transparent -374px 0px;
 }
 .skype-ico {
+  display: inline-block;
   width: 37px;
   height: 37px;
   background: url("img/head icons.png") transparent -233px 0px;
