@@ -7,10 +7,12 @@
 a {
   text-decoration: none;
 }
-
-.body {
-  background-image: url("img/back.png") no-repeat;
-  background-position: center top;
+html {
+  background: url(img/back.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 .page-container {
   min-width: 1000px;
