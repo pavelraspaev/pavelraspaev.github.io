@@ -13,6 +13,7 @@
 }
 
 .header {
+  display: block;
   margin-top: 10px;
 }
 
@@ -20,4 +21,29 @@
   width: 268px;
   height: 58px;
   background: url("img/logo.png");
+}
+
+.contact {
+  display: inline-block;
+  float: right;
+}
+
+.call {
+  display: block;
+}
+
+.call-ico {
+  width: 37px;
+  height: 37px;
+  background: url("img/head icons.png") transparent 0px 0px;
+}
+.login-ico {
+  width: 37px;
+  height: 37px;
+  background: url("img/head icons.png") transparent 0px 0px;
+}
+.skype-ico {
+  width: 37px;
+  height: 37px;
+  background: url("img/head icons.png") transparent 0px 0px;
 }
