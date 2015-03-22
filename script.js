@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	$('.fade').slick({
+	$('.main-slider').slick({
 		infinite: true,
 		speed: 1000,
 		fade: true,
