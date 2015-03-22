@@ -1,10 +1,12 @@
 * {
-  display: block;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box; 
 }
-
+.body {
+  background: url("img/back.png");
+  margin: 0;
+}
 .page-container {
   min-width: 1000px;
   max-width: 1000px;
