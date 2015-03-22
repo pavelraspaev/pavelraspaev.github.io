@@ -102,4 +102,5 @@ a {
 .menu li a:hover {
     background-color: #B3C2FF;
     color: white;
+    border-radius: 0 5px 5px 0;
 }
