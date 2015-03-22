@@ -152,6 +152,7 @@ p {
 }
 
 .bottom-colum p {
+  display: block;
   margin-bottom: 15px;
 }
 
