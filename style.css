@@ -54,6 +54,10 @@ a {
   line-height: 0;
 }
 
+p {
+  display: inline-block;
+}
+
 .ptitle {
   font: 14px bold Verdana, Arial;
 }
@@ -84,10 +88,12 @@ a {
     display: table-cell;
     background: #D5D6DA;
     height: 43px;
+    border-left: 1px solid white;
 }
 
 .menu li:first-child {
   border-radius: 5px 0 0 5px;
+  border-left: none;
 }
 .menu li:last-child {
   border-radius: 0 5px 5px 0;
