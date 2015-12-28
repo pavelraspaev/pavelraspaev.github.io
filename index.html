@@ -3,12 +3,54 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link href='https://fonts.googleapis.com/css?family=Raleway:400,100,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="normalize.css">
 	<link rel="stylesheet" href="style.css">
 	<script src="https://fb.me/react-0.14.3.min.js"></script>
 	<script src="https://fb.me/react-dom-0.14.3.min.js"></script>
-	<title>Under contruction</title>
+	<script src="jquery.parallax.min.js"></script>
+	<script src="parallax.min.js"></script>
+	<title>Pavel Raspaev</title>
+	<style>
+        #page-preloader {
+            position: fixed;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background: #000;
+            z-index: 100500;
+        }
+        #page-preloader .spinner {
+            width: 32px;
+            height: 32px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            background: url('/img/spinner.gif') no-repeat 50% 50%;
+            margin: -16px 0 0 -16px;
+        }
+    </style>
 </head>
 <body>
-	<h1>Under construction</h1>
+    <div id="page-preloader"><span class="spinner"></span></div>
+    <div id="container" class="container">
+		<ul id="scene" class="scene">
+            <li id="pr" class="layer" data-depth="1.00"><a href="index.html"><h1>Pavel Raspaev</h1></a></li>
+			<li id="proj" class="layer" data-depth="0.75"><a href="projects.html"><p>Projects</p></a></li>
+			<li id="apps" class="layer" data-depth="0.50"><a href="apps.html"><p>Test apps</p></a></li>
+			<li id="ab" class="layer" data-depth="0.25"><a href="about"><p>About</p></a></li>
+            <li id="back" class="layer" data-depth="0.10"><div id="nice"></div></li>
+		</ul>
+	</div>
+    <script>
+	var scene = document.getElementById('scene');
+	var parallax = new Parallax(scene);
+    $(window).on('load', function () {
+        var $preloader = $('#page-preloader'),
+            $spinner   = $preloader.find('.spinner');
+        $spinner.fadeOut();
+        $preloader.delay(350).fadeOut('slow');
+    });
+	</script>
 </body>
 </html>
