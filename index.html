@@ -7,39 +7,20 @@
 	<link rel="stylesheet" href="style.css">
 	<script src="https://fb.me/react-0.14.3.min.js"></script>
 	<script src="https://fb.me/react-dom-0.14.3.min.js"></script>
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 	<script src="jquery.parallax.min.js"></script>
 	<script src="parallax.min.js"></script>
 	<title>Pavel Raspaev</title>
-	<style>
-        #page-preloader {
-            position: fixed;
-            left: 0;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            background: #000;
-            z-index: 100500;
-        }
-        #page-preloader .spinner {
-            width: 32px;
-            height: 32px;
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            background: url('/img/spinner.gif') no-repeat 50% 50%;
-            margin: -16px 0 0 -16px;
-        }
-    </style>
 </head>
 <body>
     <div id="page-preloader"><span class="spinner"></span></div>
     <div id="container" class="container">
 		<ul id="scene" class="scene">
-            <li id="pr" class="layer" data-depth="1.00"><a href="index.html"><h1>Pavel Raspaev</h1></a></li>
-			<li id="proj" class="layer" data-depth="0.75"><a href="projects.html"><p>Projects</p></a></li>
-			<li id="apps" class="layer" data-depth="0.50"><a href="apps.html"><p>Test apps</p></a></li>
-			<li id="ab" class="layer" data-depth="0.25"><a href="about"><p>About</p></a></li>
-            <li id="back" class="layer" data-depth="0.10"><div id="nice"></div></li>
+            <li class="layer" data-depth="0.10"><img id="nice" src="/img/ava-tar.png" alt=""></li>
+			<li class="layer" data-depth="0.25"><a id="ab" href="about"><p>About</p></a></li>
+			<li class="layer" data-depth="0.50"><a id="apps" href="apps.html"><p>Test apps</p></a></li>
+			<li class="layer" data-depth="0.75"><a id="proj" href="projects.html"><p>Projects</p></a></li>
+            <li class="layer" data-depth="1.00"><a id="pr" href="index.html"><h1>Pavel Raspaev</h1></a></li>
 		</ul>
 	</div>
     <script>
