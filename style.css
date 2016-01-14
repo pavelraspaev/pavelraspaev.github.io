@@ -39,12 +39,16 @@ h1:hover,p:hover {
     left: 600px;
     width: 100%;
 }
-#apps {
+#apps, #bio {
     position: absolute;
     font-size: 26px;
     top: 400px;
     left: 300px;
     width: 100%;
+}
+#bio {
+    width: 600px;
+    font-size: 16px;
 }
 #proj {
     position: absolute;
@@ -53,7 +57,10 @@ h1:hover,p:hover {
     left: 600px;
     width: 100%;
 }
-
+.project {
+    width: 600px;
+    background-color: #eeeeee;
+}
 #page-preloader {
     position: fixed;
     left: 0;
@@ -91,10 +98,11 @@ h1:hover,p:hover {
         top: 50px;
         left: 200px;
     }
-    #apps {
+    #apps, #bio {
         font-size: 16px;
         top: 300px;
         left: 100px;
+        width: 300px;
     }
     #proj {
         font-size: 22px;
