@@ -20,6 +20,8 @@
 		</ul>
 	</div>
     <script>
+    var scene = document.getElementById('scene');
+	var parallax = new Parallax(scene);
     $(window).on('load', function () {
         var $preloader = $('#page-preloader'),
             $spinner   = $preloader.find('.spinner');
