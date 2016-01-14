@@ -14,74 +14,22 @@
 </head>
 <body>
     <div id="page-preloader"><span class="spinner"></span></div>
-    
+    <div id="container" class="container">
+		<ul id="scene" class="scene">
+            <li class="layer" data-depth="0.10"><img id="nice" src="/img/ava-tar.png" alt=""></li>
+			<li class="layer" data-depth="0.25"><a id="ab" href="index.html"><p>Back</p></a></li>
+            <li class="layer" data-depth="1.00"><h1 id="pr">Nothing to do here</h1></li>
+		</ul>
+	</div>
     <script>
-    $(window).on('load', function () {
-        var $preloader = $('#page-preloader'),
-            $spinner   = $preloader.find('.spinner');
-        $spinner.fadeOut();
-        $preloader.delay(350).fadeOut('slow');
-    });
-    </script>
-    <script>
-    /** @jsx React.DOM */
-
-    var MenuExample = React.createClass({
-
-        getInitialState: function(){
-            return { focused: 0 };
-        },
-
-        clicked: function(index){
-
-            // The click handler will update the state with
-            // the index of the focused menu entry
-
-            this.setState({focused: index});
-        },
-
-        render: function() {
-
-            // Here we will read the items property, which was passed
-            // as an attribute when the component was created
-
-            var self = this;
-
-            // The map method will loop over the array of menu entries,
-            // and will return a new array with <li> elements.
-
-            return (
-                <div>
-                    <ul>{ this.props.items.map(function(m, index){
-
-                        var style = '';
-
-                        if(self.state.focused == index){
-                            style = 'focused';
-                        }
-
-                        // Notice the use of the bind() method. It makes the
-                        // index available to the clicked function:
-
-                        return <li className={style} onClick={self.clicked.bind(self, index)}>{m}</li>;
-
-                    }) }
-
-                    </ul>
-
-                    <p>Selected: {this.props.items[this.state.focused]}</p>
-                </div>
-            );
-
-        }
-    });
-
-    // Render the menu component on the page, and pass an array with menu options
-
-    React.renderComponent(
-        <MenuExample items={ ['Home', 'Services', 'About', 'Contact us'] } />,
-        document.body
-    );
+        var scene = document.getElementById('scene');
+        var parallax = new Parallax(scene);
+        $(window).on('load', function () {
+            var $preloader = $('#page-preloader'),
+                $spinner   = $preloader.find('.spinner');
+            $spinner.fadeOut();
+            $preloader.delay(350).fadeOut('slow');
+        });
 	</script>
 </body>
 </html>
