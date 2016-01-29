@@ -1,0 +1,19 @@
+{
+  "name": "mygithubpage",
+  "version": "1.0.0",
+  "description": "My personal webpage on github",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pavelraspaev/pavelraspaev.github.io.git"
+  },
+  "author": "Pavel Raspaev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pavelraspaev/pavelraspaev.github.io/issues"
+  },
+  "homepage": "https://github.com/pavelraspaev/pavelraspaev.github.io"
+}
